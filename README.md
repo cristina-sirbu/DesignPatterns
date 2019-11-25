@@ -40,3 +40,33 @@ To make the singleton thread safe make the static instance volatile and when you
 
 ##### 5. Example
 Check DBSingleton.java and run DBSingletonDemo.java to see stuff running.
+
+###Builder
+
+##### 1. Concepts
+* Handles complex constructors
+* Large number of parameter
+* Immutability
+
+Examples: StringBuilder, DocumentBuilder, Locale.Builder
+
+##### 2. Design
+* Flexibility over telescopic constructors (many constructors with variations of parameters)
+* Static inner class
+* Calls appropriate constructor
+* Negates the need to expose setters
+* Java 1.5+ can take advantage of Generics
+##### 3. Pitfalls
+* Immutable
+* Inner static class
+* Design first
+* Complexity
+
+##### 4. Contrast
+* Builder: Handles complex constructors
+* Prototype: Implemented around a clone
+* Builder: No interface required
+* Prototype: Avoids calling complex constructors
+* Builder: Can be a separate class
+* Prototype: Difficult to implement in legacy code
+* Builder: Works with legacy code
