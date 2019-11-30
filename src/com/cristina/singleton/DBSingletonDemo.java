@@ -1,4 +1,4 @@
-package com.cristina;
+package com.cristina.singleton;
 
 public class DBSingletonDemo {
     public static void main(String[] args) {

@@ -70,3 +70,36 @@ Examples: StringBuilder, DocumentBuilder, Locale.Builder
 * Builder: Can be a separate class
 * Prototype: Difficult to implement in legacy code
 * Builder: Works with legacy code
+
+### Prototype
+
+##### 1. Concepts
+* Avoid costly creation
+* Avoids subclassing
+* Typically doesn't use "new"
+* Often utilizes an Interface
+* Usually implemented with a Registry
+
+Examples: java.lang.Object#clone()
+
+##### 2. Design
+* Clone/Cloneable
+* Avoids keyword "new"
+* Although a copy, each instance unique
+* Costly construction not handled by client (Builder is the opposite of the Prototype pattern)
+* Can still utilize parameters for construction
+* Shallow vs Deep Copy
+
+##### 3. Pitfalls
+* Sometimes not clear when to use
+* Used with other patterns
+    * Registry
+* Shallow vs Deep Copy
+
+##### 4. Contrast
+* Prototype: Lighter weight construction (Copy Constructor or Clone)
+* Factory: Flexible Objects (Multiple constructors)
+* Prototype: Shallow or Deep
+* Factory: Concrete Instance
+* Prototype: Copy of itself
+* Factory: Fresh Instance
