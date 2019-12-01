@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.singleton;
+package com.cristina.CreationalPatterns.singleton;
 
 public class DBSingleton {
     private static volatile DBSingleton instance = null;

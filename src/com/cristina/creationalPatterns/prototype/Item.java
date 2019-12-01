@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.prototype;
+package com.cristina.CreationalPatterns.prototype;
 
 public abstract class Item implements Cloneable {
     private String title;

@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.factory;
+package com.cristina.CreationalPatterns.factory;
 
 public class FactoryEverydayDemo {
     public static void main(String[] args) {

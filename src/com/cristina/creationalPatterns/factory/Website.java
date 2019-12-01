@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.factory;
+package com.cristina.CreationalPatterns.factory;
 
 import java.util.ArrayList;
 import java.util.List;

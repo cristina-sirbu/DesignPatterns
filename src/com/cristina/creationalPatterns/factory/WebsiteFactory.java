@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.factory;
+package com.cristina.CreationalPatterns.factory;
 
 public class WebsiteFactory {
     public static Website getWebsite(WebsiteType siteType) {

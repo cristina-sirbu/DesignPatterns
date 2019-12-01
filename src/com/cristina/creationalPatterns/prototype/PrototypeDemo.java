@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.prototype;
+package com.cristina.CreationalPatterns.prototype;
 
 public class PrototypeDemo {
     public static void main(String[] args) {

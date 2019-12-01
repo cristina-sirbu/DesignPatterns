@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.prototype;
+package com.cristina.CreationalPatterns.prototype;
 
 public class Book extends Item {
     private int numberOfPages;

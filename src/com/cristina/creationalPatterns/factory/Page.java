@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.factory;
+package com.cristina.CreationalPatterns.factory;
 
 public abstract class Page {
 }

@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.prototype;
+package com.cristina.CreationalPatterns.prototype;
 
 import java.util.HashMap;
 import java.util.Map;

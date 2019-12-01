@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.builder;
+package com.cristina.CreationalPatterns.builder;
 
 public class LunchOrderDemo {
     public static void main(String[] args) {

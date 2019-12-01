@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.abstractFactory;
+package com.cristina.CreationalPatterns.abstractFactory;
 
 //AbstractFactory
 public abstract class CreditCardFactory {

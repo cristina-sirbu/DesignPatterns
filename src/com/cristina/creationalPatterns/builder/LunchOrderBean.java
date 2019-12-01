@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.builder;
+package com.cristina.CreationalPatterns.builder;
 
 public class LunchOrderBean {
     private String bread;

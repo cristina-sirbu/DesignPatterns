@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.abstractFactory;
+package com.cristina.CreationalPatterns.abstractFactory;
 
 public class AbstractFactoryDemo {
     public static void main(String[] args) {

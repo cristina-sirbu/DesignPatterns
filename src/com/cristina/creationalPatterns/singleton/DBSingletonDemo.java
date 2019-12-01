@@ -1,4 +1,4 @@
-package com.cristina.creationalPatterns.singleton;
+package com.cristina.CreationalPatterns.singleton;
 
 public class DBSingletonDemo {
     public static void main(String[] args) {
