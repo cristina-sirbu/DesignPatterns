@@ -1,6 +1,6 @@
-#Design Patterns documentation
+# Design Patterns documentation
 
-###Singleton
+### Singleton
 
 ##### 1. Concepts
 * Only one instance is created
@@ -41,7 +41,7 @@ To make the singleton thread safe make the static instance volatile and when you
 ##### 5. Example
 Check DBSingleton.java and run DBSingletonDemo.java to see stuff running.
 
-###Builder
+### Builder
 
 ##### 1. Concepts
 * Handles complex constructors
@@ -103,3 +103,37 @@ Examples: java.lang.Object#clone()
 * Factory: Concrete Instance
 * Prototype: Copy of itself
 * Factory: Fresh Instance
+
+### Factory Method
+
+##### 1. Concepts
+* Doesn't expose instantiation logic
+* Defer to subclasses
+* Common interface
+* Specified by architecture, implemented by user (often used in frameworks; the user of the framework will instantiate the object)
+
+Examples: Calendar, ResourceBundle, NumberFormat
+
+##### 2. Design
+* Factory is responsible for lifecycle
+* Common Interface
+* Concrete Classes
+* Parameterized create method
+
+##### 3. Pitfalls
+* Complexity
+* Creation in subclass
+* Refactoring (design first as a factory method)
+
+##### 4. Contrast
+* Singleton:
+    * Returns same instance
+        * One constructor method - no args
+    * No interface
+    * No subclasses
+*  Factory:
+    * Returns various instances
+        * Multiple constructors
+    * Interface driven
+    * Subclasses
+    * Adaptable to environment more easily (many frameworks are using this pattern)
