@@ -137,3 +137,70 @@ Examples: Calendar, ResourceBundle, NumberFormat
     * Interface driven
     * Subclasses
     * Adaptable to environment more easily (many frameworks are using this pattern)
+### Builder
+
+##### 1. Concepts
+* Handles complex constructors
+* Large number of parameter
+* Immutability
+
+Examples: StringBuilder, DocumentBuilder, Locale.Builder
+
+##### 2. Design
+* Flexibility over telescopic constructors (many constructors with variations of parameters)
+* Static inner class
+* Calls appropriate constructor
+* Negates the need to expose setters
+* Java 1.5+ can take advantage of Generics
+##### 3. Pitfalls
+* Immutable
+* Inner static class
+* Design first
+* Complexity
+
+##### 4. Contrast
+* Builder: Handles complex constructors
+* Prototype: Implemented around a clone
+* Builder: No interface required
+* Prototype: Avoids calling complex constructors
+* Builder: Can be a separate class
+* Prototype: Difficult to implement in legacy code
+* Builder: Works with legacy code
+
+### AbstractFactory Pattern
+
+##### 1. Concepts
+* Factory of Factories
+* Factory of related objects
+* Common Interface
+* Defer to Subclasses
+
+Examples: DocumentBuilder; often implemented in Frameworks
+
+##### 2. Design
+* Groups Factories together
+* Factory is responsible for lifecycle
+* Common Interface
+* Concrete Classes
+* Parameterized create method
+* Composition
+
+(Used also for same queries against different types of DBs)
+
+##### 3. Pitfalls
+* Complexity
+* Runtime switch
+* Problem specific
+* Starts as a Factory
+
+##### 4. Contrast
+* Factory
+    * Returns various instances
+        * Multiple constructors
+    * Interface driven
+    * Adaptable to environment more easily
+* AbstractFactory
+    * Implemented with Factory
+    * Hides the Factory
+    * Abstracts Environment
+    * Build through Composition
